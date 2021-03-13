@@ -1,6 +1,6 @@
 app-id: com.github.liferooter.textpieces
 runtime: org.gnome.Platform
-runtime-version: 3.38
+runtime-version: '3.38'
 sdk: org.gnome.Sdk
 command: textpieces
 finish-args:
@@ -28,8 +28,6 @@ modules:
     sources:
       - type: git
         url: https://gitlab.gnome.org/GNOME/libhandy.git
-        tag: 1.0.3
-        commit: 7126d2e8da9dcdeb5751e60ff6a74930804f9637
 
 
   - name: textpieces
@@ -38,5 +36,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/liferooter/textpieces
-        tag: v1.0.1
-        commit: 408757646af8011faebdf6d63f5d7f93accb7532
+        tag: v1.0.2
+        commit: c66b835f8a80093d43d5837c293e16fc50bfa189
+
