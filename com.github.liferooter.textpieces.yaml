@@ -47,6 +47,6 @@ modules:
   sources:
     - type: git
       url: https://github.com/liferooter/textpieces
-      tag: v1.1.0
-      commit: 9855e6153bc52b853b28011115fed5abfd57754d
+      tag: v1.1.1
+      commit: 6383f99bef3bd74a3ee41d970caadbad41b2d663
 
