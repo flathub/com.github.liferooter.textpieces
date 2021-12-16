@@ -29,7 +29,7 @@ modules:
     - type: git
       url: https://github.com/liferooter/textpieces
       tag: v3.0.1
-      commit: bab07dd589f472029daa656934eb8593d85257ab
+      commit: 630323b4ba75f1b8fd144cbdecc25f8bd1f9abca
   modules:
 
   - name: libadwaita
