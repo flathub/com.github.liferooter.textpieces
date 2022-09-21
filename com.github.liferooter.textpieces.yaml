@@ -28,8 +28,7 @@ modules:
   sources:
     - type: git
       url: https://github.com/liferooter/textpieces
-      tag: v3.1.0
-      commit: 5fd7a4cf614ff1c5e11d877415be1cd214e6005e
+      tag: v3.1.1
   modules:
 
   - name: python3-pyyaml
