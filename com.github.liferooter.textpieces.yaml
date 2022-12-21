@@ -31,20 +31,13 @@ cleanup:
 
 modules:
 
-- name: blueprint
-  buildsystem: meson
-  sources:
-  - type: git
-    url: https://gitlab.gnome.org/jwestman/blueprint-compiler
-    commit: d6c6a66c15613c34cdbafb32ae5facd3bade6ddd
-
 - name: textpieces
   builddir: true
   buildsystem: meson
   sources:
   - type: git
     url: https://github.com/liferooter/textpieces
-    tag: v3.4.0
+    tag: v3.4.1
   modules:
   - name: python3-pyyaml
     buildsystem: simple
@@ -55,3 +48,21 @@ modules:
     - type: file
       url: https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz
       sha256: 68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2
+  - name: blueprint
+    buildsystem: meson
+    sources:
+    - type: git
+      url: https://gitlab.gnome.org/jwestman/blueprint-compiler
+      commit: 039d88ab45001cf799c421e58d4669a0596c4d29
+  - name: libportal
+    buildsystem: meson
+    config-opts:
+    - -Dbackend-gtk3=disabled
+    - -Dbackend-gtk4=enabled
+    - -Dbackend-qt5=disabled
+    - -Ddocs=false
+    - -Dtests=false
+    sources:
+    - type: git
+      url: https://github.com/flatpak/libportal
+      commit: 092fd6308d18ecbe21e4a14dba67bde87197878f
