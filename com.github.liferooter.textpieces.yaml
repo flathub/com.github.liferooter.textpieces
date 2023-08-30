@@ -50,6 +50,8 @@ modules:
       sha256: 68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2
   - name: blueprint
     buildsystem: meson
+    cleanup:
+      - '*'
     sources:
     - type: git
       url: https://gitlab.gnome.org/jwestman/blueprint-compiler
